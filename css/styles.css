@@ -208,6 +208,12 @@ input {
 }
 
 @media screen and (min-width: 1158px) {
+  .pege-header {
+    background-color: #ffffff;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .header-logo {
     margin-right: 76px;
   }
@@ -223,12 +229,6 @@ input {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-  }
-
-  .pege-header {
-    max-width: 100%;
-    color: #2e2f42;
-    background-color: #ffffff;
   }
 }
 
@@ -379,13 +379,23 @@ input {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero/mob-hero-image-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding-top: 72px;
   padding-bottom: 72px;
   margin: 0 auto;
+}
+
+@media (min-resolution: 2x) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/mob-hero-image@2x-min.jpg);
+  }
 }
 
 .main-title {
@@ -432,6 +442,24 @@ input {
     line-height: 1.07;
     margin-bottom: 36px;
   }
+
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/tab-hero-image-min.jpg);
+  }
+}
+
+@media (min-resolution: 2x) {
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/tab-hero-image@2x-min.jpg);
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -445,6 +473,27 @@ input {
     font-size: 56px;
     line-height: 1.07;
     margin-bottom: 48px;
+  }
+
+  .section-hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/desktop-hero-image-min.jpg);
+  }
+}
+
+@media (min-resolution: 2x) {
+  .section-hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero/desktop-hero-image@2x-min.jpg);
+    background-size: 1440px auto;
   }
 }
 
@@ -545,7 +594,8 @@ input {
 
 .our-team {
   padding: 96px 0;
-  background: #f4f4fd;
+  width: 100%;
+  background-color: #f4f4fd;
 }
 
 .tilte-ourteam {
@@ -642,6 +692,7 @@ input {
 @media screen and (min-width: 1158px) {
   .our-team {
     padding: 120px 0;
+    max-width: 1440px;
   }
 
   .cards-list {
@@ -676,7 +727,7 @@ input {
   flex-wrap: wrap;
   gap: 48px;
   justify-content: center;
-  width: 288;
+  width: 288px;
   height: auto;
 }
 
@@ -709,33 +760,34 @@ input {
 
 @media screen and (min-width: 768px) {
   .row {
+    width: auto;
     gap: 72px 24px;
     justify-content: center;
   }
 
   .card-item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
 @media screen and (min-width: 1158px) {
   .portfolio-container {
     padding: 120px 0;
-    background: #fff;
+    background-color: #fff;
   }
 
   .row {
     gap: 48px 24px;
   }
 
-  .thumb {
-    position: relative;
-    overflow: hidden;
-  }
-
   .card-item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .thumb {
+    position: relative;
+    overflow: hidden;
   }
 
   .card-item:hover .text-overlay {
@@ -771,7 +823,7 @@ input {
 /* Footer Section */
 
 .page-footer {
-  background: #2e2f42;
+  background-color: #2e2f42;
 }
 
 .footer-container {
@@ -908,9 +960,9 @@ input {
     display: inline-block;
   }
 
-  /* .page-footer {
+  .page-footer {
     padding: 96px 0;
-  } */
+  }
 
   .footer-text {
     width: 264px;
@@ -945,15 +997,18 @@ input {
     display: flex;
     align-items: baseline;
     flex-wrap: nowrap;
-    justify-content: none;
     width: 1158px;
     padding: 100px 0;
+    gap: 0;
   }
   .logo-text {
     margin-right: 120px;
   }
 
   .page-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: 1440px auto;
     padding: 100px 0;
   }
 
@@ -987,11 +1042,6 @@ input {
 
   .email-box::placeholder {
     color: #ffffff;
-  }
-
-  .email-box:hover,
-  .email-box:focus {
-    background-color: #31d0aa;
   }
 
   .button-subscribe:hover,
