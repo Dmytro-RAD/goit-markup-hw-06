@@ -78,6 +78,8 @@ input {
 /* Header Section */
 
 .pege-header {
+  max-width: 320px;
+  margin: 0 auto;
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
@@ -125,6 +127,11 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .pege-header {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
   .burger-btn {
     display: none;
   }
@@ -374,7 +381,6 @@ input {
 /* Section Hero*/
 
 .section-hero {
-  background: #2e2f42;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -386,6 +392,9 @@ input {
   padding-top: 72px;
   padding-bottom: 72px;
   margin: 0 auto;
+  max-width: 320px;
+  background-size: 320px auto;
+  background-color: #2e2f42;
 }
 
 @media (min-resolution: 2x) {
@@ -395,6 +404,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/mob-hero-image@2x-min.jpg);
+    margin: 0 auto;
+    max-width: 320px;
+    background-size: 320px auto;
   }
 }
 
@@ -449,6 +461,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/tab-hero-image-min.jpg);
+    max-width: 768px;
+    margin: 0 auto;
+    background-size: 768px auto;
   }
 }
 
@@ -459,6 +474,9 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/tab-hero-image@2x-min.jpg);
+    max-width: 768px;
+    margin: 0 auto;
+    background-size: 768px auto;
   }
 }
 
@@ -481,18 +499,21 @@ input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/desktop-hero-image-min.jpg);
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: 1440px auto;
   }
 }
 
 @media (min-resolution: 2x) {
   .section-hero {
-    max-width: 1440px;
-    margin: 0 auto;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero/desktop-hero-image@2x-min.jpg);
+    max-width: 1440px;
+    margin: 0 auto;
     background-size: 1440px auto;
   }
 }
@@ -596,6 +617,9 @@ input {
   padding: 96px 0;
   width: 100%;
   background-color: #f4f4fd;
+  margin: 0 auto;
+  max-width: 320px;
+  background-size: 320px auto;
 }
 
 .tilte-ourteam {
@@ -624,7 +648,7 @@ input {
   height: auto;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
+  background-color: #fff;
 }
 
 .subtitle-position {
@@ -679,6 +703,12 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .our-team {
+    margin: 0 auto;
+    max-width: 768px;
+    background-size: 768px auto;
+  }
+
   .cards-list {
     width: 552px;
     gap: 64px 24px;
@@ -693,6 +723,8 @@ input {
   .our-team {
     padding: 120px 0;
     max-width: 1440px;
+    margin: 0 auto;
+    background-size: 1440px auto;
   }
 
   .cards-list {
@@ -823,6 +855,9 @@ input {
 /* Footer Section */
 
 .page-footer {
+  max-width: 320px;
+  margin: 0 auto;
+  background-size: 320px auto;
   background-color: #2e2f42;
 }
 
@@ -948,6 +983,12 @@ input {
 }
 
 @media screen and (min-width: 768px) {
+  .page-footer {
+    max-width: 768px;
+    margin: 0 auto;
+    background-size: 768px auto;
+  }
+
   .footer-container {
     width: 552px;
     align-items: start;
@@ -993,6 +1034,13 @@ input {
 }
 
 @media screen and (min-width: 1158px) {
+  .page-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-size: 1440px auto;
+    padding: 100px 0;
+  }
+
   .footer-container {
     display: flex;
     align-items: baseline;
@@ -1003,13 +1051,6 @@ input {
   }
   .logo-text {
     margin-right: 120px;
-  }
-
-  .page-footer {
-    max-width: 1440px;
-    margin: 0 auto;
-    background-size: 1440px auto;
-    padding: 100px 0;
   }
 
   .footer-logo {
