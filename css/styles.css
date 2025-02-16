@@ -457,6 +457,7 @@ input {
       url(../images/hero/tab-hero-image-min.jpg);
     max-width: 768px;
     background-size: 768px auto;
+    padding: 112px 0;
   }
 
   @media (min-resolution: 2x) {
@@ -687,7 +688,7 @@ input {
 
 @media screen and (min-width: 768px) {
   .cont-our-team {
-    max-width: 552px;
+    max-width: 584px;
   }
 
   .cards-list {
